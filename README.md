@@ -1,51 +1,42 @@
 # Data Cleaning & Structural Validation
 
-## Task Objective
-
-The objective of this task was to clean a messy customer order dataset and convert it into a structured, accurate, and analysis-ready format.
+I worked on a messy customer order dataset and cleaned it using Google Sheets. The goal was to make the data more consistent, reliable, and ready for basic analysis.
 
 ## Tools Used
 
 * Google Sheets
-* Data Cleaning
-* Structural Validation
-* Basic Formulas
 * Filters
 * Find and Replace
+* Basic formulas like `TRIM`, `PROPER`, and `LOWER`
+* Manual data validation
 
 ## Dataset Overview
 
-The dataset contains customer order information such as order ID, customer details, city, state, order date, product category, quantity, unit price, payment method, delivery status, rating, notes, and total amount.
+The dataset contains customer order details such as order ID, customer name, email, phone number, city, state, order date, product category, quantity, unit price, payment method, delivery status, rating, notes, and total amount.
 
-## Work Performed
+## What I Cleaned
 
-* Preserved the original dataset in the `Raw_Data` sheet.
-* Created a working cleaned dataset in the `Cleaned_Data` sheet.
-* Created a final cleaned version in the `Final_Cleaned_Data` sheet.
 * Removed duplicate records.
-* Cleaned customer names using `TRIM` and `PROPER` formatting.
-* Standardized email values and marked invalid or missing emails as `Not Available`.
+* Cleaned customer names using `TRIM` and `PROPER`.
+* Converted email values to a consistent format and marked invalid or missing emails as `Not Available`.
 * Standardized phone number formatting.
-* Corrected inconsistent city and state names.
-* Standardized order dates into a consistent date format.
-* Cleaned and standardized product category names.
-* Validated quantity values and kept only valid quantities greater than 0.
-* Cleaned unit prices and kept only valid prices greater than 0.
-* Standardized payment method names.
-* Standardized delivery status values.
-* Checked customer ratings and kept only valid ratings from 1 to 5.
+* Fixed inconsistent city and state names.
+* Converted order dates into a consistent date format.
+* Standardized product categories.
+* Checked quantity and unit price values and kept only valid positive numbers.
+* Standardized payment methods and delivery status values.
+* Checked ratings and kept only valid values from 1 to 5.
 * Added a `Total_Amount` column using `Quantity × Unit_Price`.
-* Created `Validation_Summary`, `Cleaning_Steps`, and `Data_Dictionary` sheets to document the cleaning process.
 
 ## Sheets Included
 
-* `Raw_Data`: Original unedited dataset
-* `Cleaned_Data`: Working cleaned dataset
-* `Final_Cleaned_Data`: Final cleaned dataset ready for analysis
+* `Raw_Data`: Original dataset before cleaning
+* `Cleaned_Data`: Working sheet used during the cleaning process
+* `Final_Cleaned_Data`: Final cleaned dataset
 * `Validation_Summary`: Summary of issues found and actions taken
 * `Cleaning_Steps`: Step-by-step cleaning process
-* `Data_Dictionary`: Explanation of each column and valid values
+* `Data_Dictionary`: Explanation of columns and valid values
 
 ## Outcome
 
-The raw dataset was cleaned, standardized, validated, and prepared for further analysis, and dashboard creation.
+The final dataset is cleaner, more consistent, and ready to be used for analysis or dashboard creation.
